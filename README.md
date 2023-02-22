@@ -1,6 +1,4 @@
-# solid-state-laser-modulator-control-unit
-
-## Description
+# Solid-state laser modulator control unit
 
 This repository contains the circuit and code of the control unit of the Q-factor modulator of a solid-state laser based on the Atmega 328p microcontroller embedded in Arduino.
 
@@ -10,15 +8,15 @@ The laser without a Q-factor modulator operates in continuous mode. But some las
 
 ## Technical specifications
 
-- Start delay time of the first control pulse $t_d = 210\,\mu s$
-- Duration of the control pulse $t_p = 2.6\,\mu s$;
-- The duration of the leading edge of the pulse $t_f \le 0.3\,\mu s$
-- The duration of the rear edge of the pulse $t_b \le 0.4\,\mu s$
-- The amplitude of the control pulse on the load $U_m = 34\,V$
+- Start delay time of the first control pulse $t_d = 210 \mu s$
+- Duration of the control pulse $t_p = 2.6\ \mu s$;
+- The duration of the leading edge of the pulse $t_f \le 0.3\ \mu s$
+- The duration of the rear edge of the pulse $t_b \le 0.4\ \mu s$
+- The amplitude of the control pulse on the load $U_m = 34\ V$
 - The number of pulses in the series – 11
-- Pulse repetition period $T = 0.1\,\mu s$
-- Load resistance $R_l = 5\,k\Omega$
-- Load capacity $C_l = 50\,pF$
+- Pulse repetition period $T = 0.1\ \mu s$
+- Load resistance $R_l = 5\ k\Omega$
+- Load capacity $C_l = 50\ pF$
 
 *place for the pulses scheme*
 
@@ -76,9 +74,9 @@ $\Delta t_p = \frac{2.6 - 2.52}{2.6} = 3.07\% < 10\%$
 
 $\Delta T = \frac{9.1 - 9.04}{9.1} = 0.67\% < 10\%$
 
-$t_f = 0.244\,\mu s < 0.3\,\mu s$
+$t_f = 0.244\ \mu s < 0.3\ \mu s$
 
-$t_b = 0.034\,\mu s < 0.4\,\mu s$
+$t_b = 0.034\ \mu s < 0.4\ \mu s$
 
 ## Arduino adjust
 
