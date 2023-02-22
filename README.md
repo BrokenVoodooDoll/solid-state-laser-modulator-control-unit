@@ -38,11 +38,40 @@ The program generates inverted pulses, since there will be a transistor switch a
 
 A transistor switch is used as a power amplifier in this work. I used a soviet NPN transistor KT603V (КТ603В).
 
-*place for key scehme*
+*place for key scheme*
 
-*place for key calculation*
+### Initial data
+
+- $I_{c.sat} = 150\ mA$ - collector saturation current
+- $U_{c.-e.sat} = 0.3\ V$ - collector-emitter voltage in saturation mode
+- $E_s = 34\ V$ - external power supply voltage
+- $U_{in} = 5\ V$ - voltage at the transistor input
+- $\beta = 40$ - transistor gain
+- $S = 1.2...1.5$ saturation coefficient. Let's take it equal to 1.5
+
+### Collector resistance
+
+$R_c = \frac{E_s - U_{c.-e.sat}}{I_{c.sat}} = \frac{34 - 0.3}{0.150} = 224.7\ \Omega$
+
+### Base current
+
+$I_b = \frac{I_{c.sat}}{\beta}S = \frac{0.150}{40} \cdot 1.5 = 3.75\ mA$
+
+### Base resistance
+
+$R_b = \frac{U_{in} - 0.7 V}{I_b} = \frac{5 - 0.7}{0.00375} = 1146.7\ \Omega$
+
+It is also necessary to choose the accelerating capacity of the $C_a$ in order for the
+pulses to have a sharper front shape. Let's take $C_a = 240\ pF$.
+
+The calculated resistors must be brought to the standard row E24. Thus we get the parameters of the power amplifier:
+- $R_c = 240\ \Omega$
+- $R_b = 1.1\ k\Omega$
+- $C_a = 240\ pF$
 
 ## Results
+
+Using an oscilloscope, we can estimate the characteristics of the pulses.
 
 ### Without amplifier
 
