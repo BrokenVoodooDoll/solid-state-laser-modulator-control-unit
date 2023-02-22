@@ -47,7 +47,7 @@ A transistor switch is used as a power amplifier in this work. I used a soviet N
 - $E_s = 34\ V$ - external power supply voltage
 - $U_{in} = 5\ V$ - voltage at the transistor input
 - $\beta = 40$ - transistor gain
-- $S = 1.2...1.5$ saturation coefficient. Let's take it equal to 1.5
+- $S = 1.2\ldots1.5$ saturation coefficient. Let's take it equal to 1.5
 
 ### Collector resistance
 
