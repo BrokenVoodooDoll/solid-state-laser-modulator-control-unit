@@ -18,7 +18,7 @@ The laser without a Q-factor modulator operates in continuous mode. But some las
 - Load resistance $R_l = 5\ k\Omega$
 - Load capacity $C_l = 50\ pF$
 
-*place for the pulses scheme*
+![](images/pulse_scheme.svg)
 
 The Arduino UNO hardware platform based on the Atmega 328p 8-bit microcontroller was chosen to perform this task. The control unit consists of only two components: a microcontroller (processes an external signal and generates pulses) and a power amplifier.
 
