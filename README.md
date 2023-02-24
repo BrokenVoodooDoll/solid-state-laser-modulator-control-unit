@@ -20,7 +20,7 @@ The laser without a Q-factor modulator operates in continuous mode. But some las
 
 ![](images/pulse_scheme.svg)
 
-The Arduino UNO hardware platform based on the Atmega 328p 8-bit microcontroller was chosen to perform this task. The control unit consists of only two components: a microcontroller (processes an external signal and generates pulses) and a power amplifier.
+The Arduino UNO hardware platform based on the Atmega 328p 8-bit microcontroller was chosen to perform this task, but basically, it could be any other Arduino or even bare Atmega chip. The control unit consists of only two components: a microcontroller (processes an external signal and generates pulses) and a power amplifier.
 
 ![](images/full_scheme.png)
 
@@ -111,6 +111,4 @@ $t_b = 0.034\ \mu s < 0.4\ \mu s$
 
 ## Arduino adjust
 
-```cmd
-%ArduinoIDEPath%\hardware\tools\avr\bin\avrdude.exe -C "%ArduinoIDEPath%\hardware\tools\avr\etc\avrdude.conf" -p atmega328p -c arduino -P COM4 -b 115200 -U flash:w:"$(ProjectDir)Debug\$(TargetName).hex":i
-```
+In order to program Arduino using assembly, the [following article](https://www.arnabkumardas.com/platforms/atmel/how-to-flash-or-program-arduino-from-atmel-studio/) can be used.
