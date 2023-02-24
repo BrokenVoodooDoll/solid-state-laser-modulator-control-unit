@@ -22,6 +22,8 @@ The laser without a Q-factor modulator operates in continuous mode. But some las
 
 The Arduino UNO hardware platform based on the Atmega 328p 8-bit microcontroller was chosen to perform this task. The control unit consists of only two components: a microcontroller (processes an external signal and generates pulses) and a power amplifier.
 
+![](images/full_scheme.png)
+
 ## Description of the progam [main.asm](src/main.asm)
 
 - Configure the ports: PD7 for output, the rest for input
@@ -38,7 +40,7 @@ The program generates inverted pulses, since there will be a transistor switch a
 
 A transistor switch is used as a power amplifier in this work. I used a soviet NPN transistor KT603V (КТ603В).
 
-*place for key scheme*
+![](images/transistor_key.png)
 
 ### Initial data
 
